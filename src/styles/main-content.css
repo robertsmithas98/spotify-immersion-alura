@@ -28,6 +28,7 @@ table, table-row, table-cell: Esses valores de display são usados para criar la
 
 none: Um elemento com display: none é completamente removido do fluxo de layout e não é renderizado na tela.
 */
+
 .header__navigation {
   display: flex;
   /* ESSES detalhes que tem dentro do display flex, mostra no navegador como fica */
@@ -107,17 +108,16 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .header__login .login {
-  background-color: #24c96f;
   width: 100px;
   height: 48px;
   color: var(--text-base-dark);
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
+  background-color: #24c96f;
 }
 
 /* HOVER */
-
 .header__search:hover {
   border: 1px solid #fff;
 }
@@ -133,6 +133,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 /* FIM HOVER */
 
 /*FIM HEADER */
+
 
 /* PLAYLIST */
 .playlist-container {
@@ -177,11 +178,11 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 /* FIM SCROLL */
 
 .offer__list-item {
-  display: grid;
+  /* display: grid; */
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  gap: 16px;
+  /* grid-gap: 16px;
+  gap: 16px; */
   margin-bottom: 16px;
 
   /* CODIGO COM JS CALCULANDO OS CARDS POR COLUNA */
@@ -195,7 +196,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 /* principais são static, relative, absolute, fixed, e sticky. */
 
 .cards {
-  position: relative; /* relative:
+  position: relative;  /* relative:
                           Comportamento em relação a si mesmo: O elemento é posicionado em relação à sua posição original.
                           Mantém espaço original: O espaço original que o elemento ocuparia não é alterado, mas você pode movê-lo com top, right, bottom ou left. */
   width: 220px;
@@ -206,8 +207,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 
 .cards span {
   padding: 16px;
-  position: absolute;
-  /* absolute:
+  position: absolute;  /* absolute:
                           Comportamento em relação ao ancestral posicionado mais próximo ou ao elemento raiz (se nenhum ancestral estiver posicionado).
                           Remove do fluxo normal: O elemento é removido do fluxo normal do documento, o que significa que outros elementos agem como se o elemento não estivesse presente. */
   color: var(--text-base-light);
@@ -263,6 +263,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 /* FIM COLOR CARDS */
 
+
 .offer__list-item img {
   position: absolute;
   right: 0;
@@ -272,8 +273,8 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   transform: rotate(25deg) translate(18%, -2%);
 }
 
-/* CARD ARTISTA */
 
+/* CARD ARTISTA */
 .artist {
   --column-count: 5;
   --grid-gap: 24px;
@@ -292,7 +293,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .artist-card {
-  background: #2f3eac;
+  background: #181818;
   border-radius: 8px;
   -ms-flex: 1;
   flex: 1;
@@ -304,7 +305,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
 }
 
 .artist-card:hover {
-  background-color: #171c3a;
+  background-color: #252525;
 }
 
 .card-img {
@@ -362,7 +363,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
   right: 10px;
   top: 120px;
   padding: 18px;
-  background-color: #24c96f;
+  background-color: #1db954;
   border-radius: 100%;
   font-size: 14px;
   opacity: 0;
